@@ -56,3 +56,4 @@ chutes = {
 }
 B = board(100, chutes_and_ladders=chutes)
 B.getTransfer()
+np.savetxt('C+LTransferMatrix.csv', B.tMatrix, delimiter=',')
