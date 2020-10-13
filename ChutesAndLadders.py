@@ -31,3 +31,28 @@ class board:
                 tRow[end - 1] += 1 / 6.0
             tMatrix.append(tRow)
         self.tMatrix = np.array(tMatrix)
+
+        
+chutes = {
+    1: 38,
+    4: 14,
+    9: 31,
+    16: 6,
+    21: 42,
+    28: 84,
+    36: 44,
+    47: 26,
+    49: 41,
+    51: 67,
+    56: 53,
+    62: 19,
+    64: 60,
+    74: 91,
+    80: 100,
+    87: 24,
+    93: 73,
+    95: 75,
+    98: 78
+}
+B = board(100, chutes_and_ladders=chutes)
+B.getTransfer()
